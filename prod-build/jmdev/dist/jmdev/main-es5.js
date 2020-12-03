@@ -658,6 +658,13 @@
             url: 'http://ateliercreationdejulie.fr',
             description: 'Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.'
           }, {
+            nom: 'Crazy Trip',
+            domaine: 'Blog Voyage',
+            type: 'Blog',
+            image: './assets/images/crazytrip.jpg',
+            url: 'http://crazy-trip.us-east-2.elasticbeanstalk.com',
+            description: 'Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.'
+          }, {
             nom: 'A venir',
             domaine: 'Artisan, évennementiel, association',
             type: 'Site vitrine, ecommerce...',
@@ -1862,7 +1869,7 @@
         selectors: [["app-realisations"]],
         decls: 4,
         vars: 1,
-        consts: [[1, "row"], ["class", "col-md-4 project-card", 4, "ngFor", "ngForOf"], [1, "col-md-4", "project-card"], ["target", "_blank", 3, "href"], [1, "hover-effect"], [1, "project-content"], [1, "btn", "btn-primary", "mt-4"], ["alt", "", 1, "project-image", 3, "src"], [1, "project-title"]],
+        consts: [[1, "row"], ["class", "col-md-3 project-card", 4, "ngFor", "ngForOf"], [1, "col-md-3", "project-card"], ["target", "_blank", 3, "href"], [1, "hover-effect"], [1, "project-content"], [1, "btn", "btn-primary", "mt-4"], ["alt", "", 1, "project-image", 3, "src"], [1, "project-title"]],
         template: function RealisationsComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2");
@@ -1885,7 +1892,7 @@
           }
         },
         directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
-        styles: [".project-card[_ngcontent-%COMP%] {\n  border: 12px solid var(--theme-color-1);\n  margin: 1rem;\n  font-size: 1.3rem;\n  padding: 0;\n}\n.hover-effect[_ngcontent-%COMP%] {\n  position: absolute;\n  width: 100%;\n  height: 0px;\n  background: white;\n  text-align: center;\n  opacity: 0.9;\n  overflow: hidden;\n  transition: 1s;\n}\n.project-card[_ngcontent-%COMP%]:hover   .hover-effect[_ngcontent-%COMP%] {\n  height: 100%;\n  transition: 1s;\n}\n.project-content[_ngcontent-%COMP%] {\n  margin-top: 90px;\n}\n.hover-effect[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n}\n.project-card[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: none;\n}\n.project-image[_ngcontent-%COMP%] {\n  height: 310px;\n  width: 100%;\n  z-index: 1;\n}\n.project-title[_ngcontent-%COMP%] {\n  text-align: center;\n  padding-top: 0.5rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvaG9tZS9yZWFsaXNhdGlvbnMvcmVhbGlzYXRpb25zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBDQUFBO0FBRUE7RUFDSSx1Q0FBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLFVBQUE7QUFBSjtBQUdBO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0FBQUo7QUFHQTtFQUNJLFlBQUE7RUFDQSxjQUFBO0FBQUo7QUFHQTtFQUNJLGdCQUFBO0FBQUo7QUFHQTtFQUNJLGlCQUFBO0FBQUo7QUFHQTtFQUNJLHFCQUFBO0FBQUo7QUFHQTtFQUNJLGFBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtBQUFKO0FBR0E7RUFDSSxrQkFBQTtFQUNBLG1CQUFBO0FBQUoiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9ob21lL3JlYWxpc2F0aW9ucy9yZWFsaXNhdGlvbnMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKioqKioqKioqKiogUkVBTElTQVRJT05TICoqKioqKioqKioqKioqKiovXHJcblxyXG4ucHJvamVjdC1jYXJke1xyXG4gICAgYm9yZGVyOiAxMnB4IHNvbGlkIHZhcigtLXRoZW1lLWNvbG9yLTEpO1xyXG4gICAgbWFyZ2luOiAxcmVtO1xyXG4gICAgZm9udC1zaXplOiAxLjNyZW07XHJcbiAgICBwYWRkaW5nOiAwO1xyXG59XHJcblxyXG4uaG92ZXItZWZmZWN0e1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDBweDtcclxuICAgIGJhY2tncm91bmQ6IHdoaXRlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgb3BhY2l0eTogMC45O1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICAgIHRyYW5zaXRpb246IDFzO1xyXG59XHJcblxyXG4ucHJvamVjdC1jYXJkOmhvdmVyIC5ob3Zlci1lZmZlY3R7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICB0cmFuc2l0aW9uOiAxcztcclxufVxyXG5cclxuLnByb2plY3QtY29udGVudHtcclxuICAgIG1hcmdpbi10b3A6IDkwcHg7XHJcbn1cclxuXHJcbi5ob3Zlci1lZmZlY3QgaDUge1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbn1cclxuXHJcbi5wcm9qZWN0LWNhcmQgYTpob3ZlcntcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuLnByb2plY3QtaW1hZ2V7XHJcbiAgICBoZWlnaHQ6IDMxMHB4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICB6LWluZGV4OiAxO1xyXG59XHJcblxyXG4ucHJvamVjdC10aXRsZXtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHBhZGRpbmctdG9wOiAwLjVyZW07XHJcbn0gICJdfQ== */"]
+        styles: [".project-card[_ngcontent-%COMP%] {\n  border: 12px solid var(--theme-color-1);\n  margin: 1rem;\n  font-size: 1.3rem;\n  padding: 0;\n}\n.hover-effect[_ngcontent-%COMP%] {\n  position: absolute;\n  width: 100%;\n  height: 0px;\n  background: white;\n  text-align: center;\n  opacity: 0.9;\n  overflow: hidden;\n  transition: 1s;\n}\n.project-card[_ngcontent-%COMP%]:hover   .hover-effect[_ngcontent-%COMP%] {\n  height: 100%;\n  transition: 1s;\n}\n.project-content[_ngcontent-%COMP%] {\n  margin-top: 90px;\n}\n.hover-effect[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n}\n.project-card[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: none;\n}\n.project-image[_ngcontent-%COMP%] {\n  height: 253px;\n  width: 100%;\n  z-index: 1;\n}\n.project-title[_ngcontent-%COMP%] {\n  text-align: center;\n  padding-top: 0.5rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvaG9tZS9yZWFsaXNhdGlvbnMvcmVhbGlzYXRpb25zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBDQUFBO0FBRUE7RUFDSSx1Q0FBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLFVBQUE7QUFBSjtBQUdBO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0FBQUo7QUFHQTtFQUNJLFlBQUE7RUFDQSxjQUFBO0FBQUo7QUFHQTtFQUNJLGdCQUFBO0FBQUo7QUFHQTtFQUNJLGlCQUFBO0FBQUo7QUFHQTtFQUNJLHFCQUFBO0FBQUo7QUFHQTtFQUNJLGFBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtBQUFKO0FBR0E7RUFDSSxrQkFBQTtFQUNBLG1CQUFBO0FBQUoiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9ob21lL3JlYWxpc2F0aW9ucy9yZWFsaXNhdGlvbnMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKioqKioqKioqKiogUkVBTElTQVRJT05TICoqKioqKioqKioqKioqKiovXHJcblxyXG4ucHJvamVjdC1jYXJke1xyXG4gICAgYm9yZGVyOiAxMnB4IHNvbGlkIHZhcigtLXRoZW1lLWNvbG9yLTEpO1xyXG4gICAgbWFyZ2luOiAxcmVtO1xyXG4gICAgZm9udC1zaXplOiAxLjNyZW07XHJcbiAgICBwYWRkaW5nOiAwO1xyXG59XHJcblxyXG4uaG92ZXItZWZmZWN0e1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDBweDtcclxuICAgIGJhY2tncm91bmQ6IHdoaXRlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgb3BhY2l0eTogMC45O1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICAgIHRyYW5zaXRpb246IDFzO1xyXG59XHJcblxyXG4ucHJvamVjdC1jYXJkOmhvdmVyIC5ob3Zlci1lZmZlY3R7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICB0cmFuc2l0aW9uOiAxcztcclxufVxyXG5cclxuLnByb2plY3QtY29udGVudHtcclxuICAgIG1hcmdpbi10b3A6IDkwcHg7XHJcbn1cclxuXHJcbi5ob3Zlci1lZmZlY3QgaDUge1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbn1cclxuXHJcbi5wcm9qZWN0LWNhcmQgYTpob3ZlcntcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuLnByb2plY3QtaW1hZ2V7XHJcbiAgICBoZWlnaHQ6IDI1M3B4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICB6LWluZGV4OiAxO1xyXG59XHJcblxyXG4ucHJvamVjdC10aXRsZXtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHBhZGRpbmctdG9wOiAwLjVyZW07XHJcbn0gICJdfQ== */"]
       });
       /*@__PURE__*/
 
@@ -2378,6 +2385,24 @@
         }
       }
 
+      function ContactComponent_div_40_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          var ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r8.messageText);
+        }
+      }
+
       var ContactComponent = /*#__PURE__*/function () {
         function ContactComponent(emailService, formBuilder) {
           _classCallCheck(this, ContactComponent);
@@ -2425,9 +2450,11 @@
               console.error(err);
               _this.loading = false;
               _this.buttonText = "Envoyer";
+              _this.messageText = "Une erreur est survenue...";
             }, function () {
               _this.loading = false;
-              _this.buttonText = "Message Envoyé";
+              _this.messageText = "Votre message a bien été envoyé";
+              _this.buttonText = "Envoyer un autre message";
 
               _this.initForm();
             });
@@ -2444,9 +2471,9 @@
       ContactComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
         type: ContactComponent,
         selectors: [["app-contact"]],
-        decls: 40,
-        vars: 4,
-        consts: [[1, "col-md-8", "mx-auto", 3, "formGroup", "ngSubmit"], ["href", "tel:+33616383687"], ["width", "1em", "height", "1em", "viewBox", "0 0 16 16", "fill", "currentColor", "xmlns", "http://www.w3.org/2000/svg", 1, "bi", "bi-telephone"], ["fill-rule", "evenodd", "d", "M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"], ["href", "mailto:marque_julien@hotmail.fr"], ["width", "1em", "height", "1em", "viewBox", "0 0 16 16", "fill", "currentColor", "xmlns", "http://www.w3.org/2000/svg", 1, "bi", "bi-mailbox"], ["fill-rule", "evenodd", "d", "M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"], ["fill-rule", "evenodd", "d", "M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854z"], ["d", "M5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"], [1, "form-group"], ["for", "exampleInputEmail1"], ["type", "text", "id", "name", "name", "name", "placeholder", "", "formControlName", "name", 1, "form-control"], ["type", "email", "id", "email", "name", "email", "placeholder", "", "formControlName", "email", 1, "form-control"], ["for", "exampleInputPassword1"], ["type", "text", "name", "objet", "id", "objet", "placeholder", "", "formControlName", "object", 1, "form-control"], ["name", "message", "id", "message", "placeholder", "", "cols", "30", "rows", "10", "formControlName", "message", 1, "form-control"], ["type", "submit", 1, "btn", "btn-primary", "btn-block", 3, "disabled"], [4, "ngIf"]],
+        decls: 41,
+        vars: 5,
+        consts: [[1, "col-md-8", "mx-auto", 3, "formGroup", "ngSubmit"], ["href", "tel:+33616383687"], ["width", "1em", "height", "1em", "viewBox", "0 0 16 16", "fill", "currentColor", "xmlns", "http://www.w3.org/2000/svg", 1, "bi", "bi-telephone"], ["fill-rule", "evenodd", "d", "M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"], ["href", "mailto:marque_julien@hotmail.fr"], ["width", "1em", "height", "1em", "viewBox", "0 0 16 16", "fill", "currentColor", "xmlns", "http://www.w3.org/2000/svg", 1, "bi", "bi-mailbox"], ["fill-rule", "evenodd", "d", "M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"], ["fill-rule", "evenodd", "d", "M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854z"], ["d", "M5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"], [1, "form-group"], ["for", "exampleInputEmail1"], ["type", "text", "id", "name", "name", "name", "placeholder", "", "formControlName", "name", 1, "form-control"], ["type", "email", "id", "email", "name", "email", "placeholder", "", "formControlName", "email", 1, "form-control"], ["for", "exampleInputPassword1"], ["type", "text", "name", "objet", "id", "objet", "placeholder", "", "formControlName", "object", 1, "form-control"], ["name", "message", "id", "message", "placeholder", "", "cols", "30", "rows", "10", "formControlName", "message", 1, "form-control"], ["type", "submit", 1, "btn", "btn-primary", "btn-block", 3, "disabled"], [4, "ngIf"], ["class", "mt-3 alert alert-success", 4, "ngIf"], [1, "mt-3", "alert", "alert-success"]],
         template: function ContactComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2");
@@ -2573,6 +2600,8 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](39, ContactComponent_small_39_Template, 2, 0, "small", 17);
 
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](40, ContactComponent_div_40_Template, 2, 1, "div", 18);
+
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
 
@@ -2592,6 +2621,10 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.contactForm.invalid);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.messageText);
           }
         },
         directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"]],
