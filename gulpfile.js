@@ -45,6 +45,12 @@ function copyAngularCodeTask() {
         .pipe(dest(`${paths.angular_dist}`));
 }
 
+function copySEOFiles(){
+  log('copying robots.txt and sitemap.xml into the directory')
+  return src(['robots.txt', 'sitemap.xml'])
+        .pipe(dest(`${paths.angular_dist}` + '/jmdev'));
+}
+
 function copyNodeJSCodeTask() {
   log('building and copying server code into the directory')
   return src(['package.json', 'server.js', 'details.json'])
@@ -62,6 +68,6 @@ exports.default = series(
   clean,
   createProdBuildFolder,
   buildAngularCodeTask,
-  parallel(copyAngularCodeTask, copyNodeJSCodeTask),
+  parallel(copyAngularCodeTask, copySEOFiles, copyNodeJSCodeTask),
   zippingTask
 );
