@@ -282,7 +282,7 @@
 
       var environment = {
         production: false,
-        URL_API: 'http://node-angular.us-east-2.elasticbeanstalk.com/'
+        URL_API: 'http://localhost:8080/'
       };
       /*
        * For easier debugging in development mode, you can import the following file
@@ -674,7 +674,7 @@
             description: 'Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.'
           }, {
             nom: 'A venir',
-            categorie: ['Développement Web', 'Wordpress', 'Angular'],
+            categorie: ['Toutes'],
             domaine: 'Artisan, évennementiel, association',
             type: 'Site vitrine, ecommerce...',
             image: './assets/images/vitrine.jpg',
@@ -979,6 +979,12 @@
       var _pages_home_contact_contact_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ./pages/home/contact/contact.component */
       "jOIA");
+      /* harmony import */
+
+
+      var ng_recaptcha__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+      /*! ng-recaptcha */
+      "jCJ1");
 
       var AppModule = function AppModule() {
         _classCallCheck(this, AppModule);
@@ -993,13 +999,13 @@
           return new (t || AppModule)();
         },
         providers: [],
-        imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"]]]
+        imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_16__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_16__["RecaptchaFormsModule"]]]
       });
 
       (function () {
         (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _templates_header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"], _templates_footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _pages_mentions_legales_mentions_legales_component__WEBPACK_IMPORTED_MODULE_9__["MentionsLegalesComponent"], _pages_cgv_cgv_component__WEBPACK_IMPORTED_MODULE_10__["CgvComponent"], _pages_details_details_component__WEBPACK_IMPORTED_MODULE_11__["DetailsComponent"], _pages_home_services_services_component__WEBPACK_IMPORTED_MODULE_12__["ServicesComponent"], _pages_home_competences_competences_component__WEBPACK_IMPORTED_MODULE_13__["CompetencesComponent"], _pages_home_realisations_realisations_component__WEBPACK_IMPORTED_MODULE_14__["RealisationsComponent"], _pages_home_contact_contact_component__WEBPACK_IMPORTED_MODULE_15__["ContactComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"]]
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_16__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_16__["RecaptchaFormsModule"]]
         });
       })();
       /*@__PURE__*/
@@ -1010,7 +1016,7 @@
           type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
           args: [{
             declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _templates_header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"], _templates_footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _pages_mentions_legales_mentions_legales_component__WEBPACK_IMPORTED_MODULE_9__["MentionsLegalesComponent"], _pages_cgv_cgv_component__WEBPACK_IMPORTED_MODULE_10__["CgvComponent"], _pages_details_details_component__WEBPACK_IMPORTED_MODULE_11__["DetailsComponent"], _pages_home_services_services_component__WEBPACK_IMPORTED_MODULE_12__["ServicesComponent"], _pages_home_competences_competences_component__WEBPACK_IMPORTED_MODULE_13__["CompetencesComponent"], _pages_home_realisations_realisations_component__WEBPACK_IMPORTED_MODULE_14__["RealisationsComponent"], _pages_home_contact_contact_component__WEBPACK_IMPORTED_MODULE_15__["ContactComponent"]],
-            imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"]],
+            imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_16__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_16__["RecaptchaFormsModule"]],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
           }]
@@ -1450,7 +1456,7 @@
             nom: 'Création de sites internet',
             image: './assets/images/vitrine.jpg',
             url: 'http://ateliercreationdejulie.fr',
-            prestations: ['Interface administrateur', 'Site responsive (adapté à tous supports)', 'Mise en place du contenu', 'Optimisation SEO (référencement)', 'Ajout de fonctionnalité']
+            prestations: ['Site vitrine - Boutique en ligne', 'Site responsive (adapté à tous supports)', 'Mise en place du contenu', 'Optimisation SEO (référencement)', 'Ajout de fonctionnalité']
           }, {
             nom: 'Développement fullstack',
             image: './assets/images/blogvoyage.jpg',
@@ -2387,61 +2393,80 @@
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
       "fXoL");
       /* harmony import */
 
 
-      var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/forms */
       "3Pt+");
       /* harmony import */
 
 
-      var src_app_services_email_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      var src_app_services_email_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! src/app/services/email.service */
       "cfV7");
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      var src_app_services_recaptcha_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! src/app/services/recaptcha.service */
+      "taJy");
+      /* harmony import */
+
+
+      var ng_recaptcha__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ng-recaptcha */
+      "jCJ1");
+      /* harmony import */
+
+
+      var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! @angular/common */
       "ofXK");
 
-      function ContactComponent_small_35_Template(rf, ctx) {
+      function ContactComponent_small_37_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "small");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "small");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "veuillez, s'il vous plait, remplir tous les champs");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "veuillez, s'il vous plait, remplir tous les champs");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         }
       }
 
-      function ContactComponent_div_36_Template(rf, ctx) {
+      function ContactComponent_div_38_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 17);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
-          var ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r12.messageText);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r12.messageText);
         }
       }
 
       var ContactComponent = /*#__PURE__*/function () {
-        function ContactComponent(emailService, formBuilder) {
+        function ContactComponent(emailService, reCaptchaService, formBuilder) {
           _classCallCheck(this, ContactComponent);
 
           this.emailService = emailService;
+          this.reCaptchaService = reCaptchaService;
           this.formBuilder = formBuilder;
           this.buttonText = "Envoyer";
           this.loading = false;
@@ -2456,11 +2481,44 @@
           key: "initForm",
           value: function initForm() {
             this.contactForm = this.formBuilder.group({
-              name: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
-              email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
-              object: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
-              message: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]
+              name: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+              email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+              object: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+              message: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+              recaptchaReactive: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
             });
+          } //function to resolve the reCaptcha and retrieve a token
+
+        }, {
+          key: "resolved",
+          value: function resolved(captchaResponse) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+              return regeneratorRuntime.wrap(function _callee$(_context) {
+                while (1) {
+                  switch (_context.prev = _context.next) {
+                    case 0:
+                      console.log("Resolved response token: ".concat(captchaResponse));
+                      _context.next = 3;
+                      return this.sendTokenToBackend(captchaResponse);
+
+                    case 3:
+                    case "end":
+                      return _context.stop();
+                  }
+                }
+              }, _callee, this);
+            }));
+          } //function to send the token to the node server
+
+        }, {
+          key: "sendTokenToBackend",
+          value: function sendTokenToBackend(tok) {
+            //calling the service and passing the token to the service
+            this.reCaptchaService.sendToken(tok).subscribe(function (data) {
+              console.log(data);
+            }, function (err) {
+              console.log(err);
+            }, function () {});
           }
         }, {
           key: "onSubmit",
@@ -2499,156 +2557,168 @@
       }();
 
       ContactComponent.ɵfac = function ContactComponent_Factory(t) {
-        return new (t || ContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_email_service__WEBPACK_IMPORTED_MODULE_2__["EmailService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]));
+        return new (t || ContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_email_service__WEBPACK_IMPORTED_MODULE_3__["EmailService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_recaptcha_service__WEBPACK_IMPORTED_MODULE_4__["RecaptchaService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]));
       };
 
-      ContactComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      ContactComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
         type: ContactComponent,
         selectors: [["app-contact"]],
-        decls: 37,
+        decls: 39,
         vars: 5,
-        consts: [[1, "col-md-8", "mx-auto", 3, "formGroup", "ngSubmit"], ["href", "tel:+33616383687"], [1, "fas", "fa-phone"], ["href", "mailto:marque_julien@hotmail.fr"], [1, "far", "fa-envelope"], [1, "form-group"], ["for", "exampleInputEmail1"], ["type", "text", "id", "name", "name", "name", "placeholder", "", "formControlName", "name", 1, "form-control"], ["type", "email", "id", "email", "name", "email", "placeholder", "", "formControlName", "email", 1, "form-control"], ["for", "exampleInputPassword1"], ["type", "text", "name", "objet", "id", "objet", "placeholder", "", "formControlName", "object", 1, "form-control"], ["name", "message", "id", "message", "placeholder", "", "cols", "30", "rows", "10", "formControlName", "message", 1, "form-control"], ["type", "submit", 1, "btn", "btn-primary", "btn-block", 3, "disabled"], [4, "ngIf"], ["class", "mt-3 alert alert-success", 4, "ngIf"], [1, "mt-3", "alert", "alert-success"]],
+        consts: [[1, "col-md-8", "mx-auto", 3, "formGroup", "ngSubmit"], ["href", "tel:+33616383687"], [1, "fas", "fa-phone"], ["href", "mailto:marque_julien@hotmail.fr"], [1, "far", "fa-envelope"], [1, "form-group"], ["for", "exampleInputEmail1"], ["type", "text", "id", "name", "name", "name", "placeholder", "", "formControlName", "name", 1, "form-control"], ["type", "email", "id", "email", "name", "email", "placeholder", "", "formControlName", "email", 1, "form-control"], ["for", "exampleInputPassword1"], ["type", "text", "name", "objet", "id", "objet", "placeholder", "", "formControlName", "object", 1, "form-control"], ["name", "message", "id", "message", "placeholder", "", "cols", "30", "rows", "10", "formControlName", "message", 1, "form-control"], [1, "mb-2"], ["formControlName", "recaptchaReactive", "siteKey", "6LcxpAsaAAAAAHc3ynWbIamiC8Eso5VzfED2g_ay", 3, "resolved"], ["type", "submit", 1, "btn", "btn-primary", "btn-block", 3, "disabled"], [4, "ngIf"], ["class", "mt-3 alert alert-success", 4, "ngIf"], [1, "mt-3", "alert", "alert-success"]],
         template: function ContactComponent_Template(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h2");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Contact");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Contact");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "form", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "form", 0);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function ContactComponent_Template_form_ngSubmit_2_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngSubmit", function ContactComponent_Template_form_ngSubmit_2_listener() {
               return ctx.onSubmit();
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h4");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "h4");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Besoin d'un renseignement ou d'un devis ? ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, " Besoin d'un renseignement ou d'un devis ? ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "a", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "i", 2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "i", 2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "06 16 38 36 87");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](7, "06 16 38 36 87");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "br");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](8, "br");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "a", 3);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "i", 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](10, "i", 4);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "marque_julien@hotmail.fr");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, "marque_julien@hotmail.fr");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "hr");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "hr");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h4");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "h4");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Ou contactez moi via ce formulaire");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "Ou contactez moi via ce formulaire");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " Pour me faire part de votre projet ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15, " Pour me faire part de votre projet ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "hr");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](16, "hr");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "div", 5);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "label", 6);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "label", 6);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Nom, Soci\xE9t\xE9");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](19, "Nom, Soci\xE9t\xE9");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "input", 7);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](20, "input", 7);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "div", 5);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "label", 6);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "label", 6);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Adresse Email");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Adresse Email");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "input", 8);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](24, "input", 8);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "div", 5);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "label", 9);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "label", 9);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Objet");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Objet");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "input", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](28, "input", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "div", 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "div", 5);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "label", 9);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "label", 9);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Message");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Message");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](32, "textarea", 11);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](32, "textarea", 11);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "button", 12);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "div", 12);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "re-captcha", 13);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("resolved", function ContactComponent_Template_re_captcha_resolved_34_listener($event) {
+              return ctx.resolved($event);
+            });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](35, ContactComponent_small_35_Template, 2, 0, "small", 13);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](36, ContactComponent_div_36_Template, 2, 1, "div", 14);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](35, "button", 14);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](37, ContactComponent_small_37_Template, 2, 0, "small", 15);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](38, ContactComponent_div_38_Template, 2, 1, "div", 16);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           }
 
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.contactForm);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx.contactForm);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](31);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](33);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.contactForm.invalid);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.contactForm.invalid);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.buttonText, " ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx.buttonText, " ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.contactForm.invalid);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.contactForm.invalid);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.messageText);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.messageText);
           }
         },
-        directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"]],
+        directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControlName"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_5__["RecaptchaComponent"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_5__["RecaptchaValueAccessorDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"]],
         styles: ["form[_ngcontent-%COMP%] {\n  background: #339900;\n  padding: 2.5rem;\n}\ninput[_ngcontent-%COMP%], textarea[_ngcontent-%COMP%] {\n  border-radius: 0;\n  background-color: transparent;\n  color: white;\n  border: none;\n  border-bottom: 2px solid black;\n  border-left: 2px solid black;\n}\ninput[_ngcontent-%COMP%]:focus, textarea[_ngcontent-%COMP%]:focus {\n  background-color: rgba(255, 255, 255, 0.5);\n  border: 2px solid black;\n  box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.25);\n}\na[_ngcontent-%COMP%] {\n  color: var(--text-color-2);\n}\nbutton[_ngcontent-%COMP%] {\n  border-radius: 0;\n  background-color: var(--theme-color-1);\n  border: var(--theme-color-1);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvaG9tZS9jb250YWN0L2NvbnRhY3QuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsb0NBQUE7QUFFQTtFQUNJLG1CQUFBO0VBQ0EsZUFBQTtBQUFKO0FBR0E7RUFDSSxnQkFBQTtFQUNBLDZCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSw4QkFBQTtFQUNBLDRCQUFBO0FBQUo7QUFHQTtFQUNJLDBDQUFBO0VBQ0EsdUJBQUE7RUFDQSxpREFBQTtBQUFKO0FBRUE7RUFDSSwwQkFBQTtBQUNKO0FBRUE7RUFDSSxnQkFBQTtFQUNBLHNDQUFBO0VBQ0EsNEJBQUE7QUFDSiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvY29udGFjdC9jb250YWN0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqKioqKioqKioqQ09OVEFDVCAqKioqKioqKioqKioqKioqL1xyXG5cclxuZm9ybXtcclxuICAgIGJhY2tncm91bmQ6ICMzMzk5MDA7XHJcbiAgICBwYWRkaW5nOiAyLjVyZW07XHJcbn1cclxuXHJcbmlucHV0LCB0ZXh0YXJlYXtcclxuICAgIGJvcmRlci1yYWRpdXM6IDA7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCBibGFjaztcclxuICAgIGJvcmRlci1sZWZ0OiAycHggc29saWQgYmxhY2s7XHJcbn1cclxuXHJcbmlucHV0OmZvY3VzLCB0ZXh0YXJlYTpmb2N1c3tcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC41KTtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG4gICAgYm94LXNoYWRvdzogMCAwIDAuMXJlbSAwLjFyZW0gcmdiYSgwLCAwLCAwLCAwLjI1KVxyXG59XHJcbmF7XHJcbiAgICBjb2xvcjogdmFyKC0tdGV4dC1jb2xvci0yKTtcclxufVxyXG5cclxuYnV0dG9ue1xyXG4gICAgYm9yZGVyLXJhZGl1czogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLXRoZW1lLWNvbG9yLTEpO1xyXG4gICAgYm9yZGVyOiB2YXIoLS10aGVtZS1jb2xvci0xKTtcclxufVxyXG4iXX0= */"]
       });
       /*@__PURE__*/
 
       (function () {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ContactComponent, [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ContactComponent, [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
           args: [{
             selector: 'app-contact',
             templateUrl: './contact.component.html',
@@ -2656,9 +2726,95 @@
           }]
         }], function () {
           return [{
-            type: src_app_services_email_service__WEBPACK_IMPORTED_MODULE_2__["EmailService"]
+            type: src_app_services_email_service__WEBPACK_IMPORTED_MODULE_3__["EmailService"]
           }, {
-            type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]
+            type: src_app_services_recaptcha_service__WEBPACK_IMPORTED_MODULE_4__["RecaptchaService"]
+          }, {
+            type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+          }];
+        }, null);
+      })();
+      /***/
+
+    },
+
+    /***/
+    "taJy":
+    /*!***********************************************!*\
+      !*** ./src/app/services/recaptcha.service.ts ***!
+      \***********************************************/
+
+    /*! exports provided: RecaptchaService */
+
+    /***/
+    function taJy(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "RecaptchaService", function () {
+        return RecaptchaService;
+      });
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! src/environments/environment */
+      "AytR");
+      /* harmony import */
+
+
+      var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/common/http */
+      "tk/3");
+
+      var RecaptchaService = /*#__PURE__*/function () {
+        function RecaptchaService(http) {
+          _classCallCheck(this, RecaptchaService);
+
+          this.http = http;
+        }
+
+        _createClass(RecaptchaService, [{
+          key: "sendToken",
+          value: function sendToken(token) {
+            return this.http.post(src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].URL_API + "token_validate", {
+              recaptcha: token
+            });
+          }
+        }]);
+
+        return RecaptchaService;
+      }();
+
+      RecaptchaService.ɵfac = function RecaptchaService_Factory(t) {
+        return new (t || RecaptchaService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]));
+      };
+
+      RecaptchaService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+        token: RecaptchaService,
+        factory: RecaptchaService.ɵfac,
+        providedIn: 'root'
+      });
+      /*@__PURE__*/
+
+      (function () {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RecaptchaService, [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+          args: [{
+            providedIn: 'root'
+          }]
+        }], function () {
+          return [{
+            type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
           }];
         }, null);
       })();

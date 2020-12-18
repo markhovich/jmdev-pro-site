@@ -1,11 +1,12 @@
 const express = require("express");
-const app = express();
 const bodyParser = require("body-parser");
-const PORT = 8080;
 const cors = require("cors");
+const request = require("request");
 const nodemailer = require("nodemailer");
 const path = require('path');
 const details = require('./details.json');
+const app = express();
+const PORT = 8080;
 
 // configure the Express middleware to accept CORS requests and parse request body into JSON
 app.use(cors({origin: "*" }));
@@ -24,7 +25,50 @@ app.listen(PORT, () => {
     console.log(`Server listening on the port::${PORT}`);
 });
 
-app.post("/sendmail", (req, res) => {
+/**---------------------------------------------------------------------------------
+ * -----------------------------  CAPTCHA  -----------------------------------------
+ ----------------------------------------------------------------------------------*/
+
+app.post('/token_validate', (req, res)=>{
+      
+  let token = req.body.recaptcha;
+  const secretkey = "6LcxpAsaAAAAAFofb_mxrPUDhNchRKYSFpWdBiIU"; //the secret key from your google admin console;
+  
+  //token validation url is URL: https://www.google.com/recaptcha/api/siteverify 
+  // METHOD used is: POST
+  
+  const url =  `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}&remoteip=${req.connection.remoteAddress}`
+   
+  //note that remoteip is the users ip address and it is optional
+  // in node req.connection.remoteAddress gives the users ip address
+  
+  if(token === null || token === undefined){
+    res.status(201).send({success: false, message: "Token is empty or invalid"})
+    return console.log("token empty");
+  }
+  
+  request(url, function(err, response, body){
+    //the body is the data that contains success message
+    body = JSON.parse(body);
+    
+    //check if the validation failed
+    if(body.success !== undefined && !data.success){
+         res.send({success: false, 'message': "recaptcha failed"});
+         return console.log("failed")
+     }
+    
+    //if passed response success message to client
+     res.send({"success": true, 'message': "recaptcha passed"});
+    
+  })
+
+})
+
+/**---------------------------------------------------------------------------------
+ * -----------------------------  EMAIL SENDER  -----------------------------------------
+ ----------------------------------------------------------------------------------*/
+
+ app.post("/sendmail", (req, res) => {
   console.log("sendmail request came");
   let user = req.body;
   sendMail(user, info => {
