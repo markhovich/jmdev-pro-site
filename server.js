@@ -4,7 +4,8 @@ const cors = require("cors");
 const request = require("request");
 const nodemailer = require("nodemailer");
 const path = require('path');
-const details = require('./details.json');
+const details = require('./assets/details.json');
+const captcha = require('./assets/captcha.json')
 const app = express();
 const PORT = 8080;
 
@@ -32,16 +33,12 @@ app.listen(PORT, () => {
 app.post('/token_validate', (req, res)=>{
       
   let token = req.body.recaptcha;
-  const secretkey = "6LcxpAsaAAAAAFofb_mxrPUDhNchRKYSFpWdBiIU"; //the secret key from your google admin console;
-  
+
   //token validation url is URL: https://www.google.com/recaptcha/api/siteverify 
   // METHOD used is: POST
-  
-  const url =  `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}&remoteip=${req.connection.remoteAddress}`
-   
+  const url =  'https://www.google.com/recaptcha/api/siteverify?secret=' + captcha.secretkey + '&response=' + token +'&remoteip' + req.connection.remoteAddress;
   //note that remoteip is the users ip address and it is optional
   // in node req.connection.remoteAddress gives the users ip address
-  
   if(token === null || token === undefined){
     res.status(201).send({success: false, message: "Token is empty or invalid"})
     return console.log("token empty");
@@ -50,9 +47,9 @@ app.post('/token_validate', (req, res)=>{
   request(url, function(err, response, body){
     //the body is the data that contains success message
     body = JSON.parse(body);
-    
+
     //check if the validation failed
-    if(body.success !== undefined && !data.success){
+    if(body.success !== undefined && body.success === false){
          res.send({success: false, 'message': "recaptcha failed"});
          return console.log("failed")
      }

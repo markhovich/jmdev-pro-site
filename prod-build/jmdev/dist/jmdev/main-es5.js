@@ -282,7 +282,7 @@
 
       var environment = {
         production: false,
-        URL_API: 'http://localhost:8080/'
+        URL_API: '/http://localhost:8080/'
       };
       /*
        * For easier debugging in development mode, you can import the following file
@@ -2485,7 +2485,7 @@
               email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
               object: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
               message: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-              recaptchaReactive: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
+              recaptchaReactive: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]()
             });
           } //function to resolve the reCaptcha and retrieve a token
 
